@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vanguard-innovation/bench-mo-money.git"
+    "url": "git+https://github.com/aokorodu/portfolio.git"
   },
   "author": "Abraham Okorodudu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vanguard-innovation/bench-mo-money/issues"
+    "url": "https://github.com/aokorodu/portfolio/issues"
   },
-  "homepage": "https://github.com/vanguard-innovation/bench-mo-money#readme",
+  "homepage": "https://github.com/aokorodu/portfolio/#readme",
   "devDependencies": {
     "css-loader": "^3.4.2",
     "node-sass": "^4.13.1",
