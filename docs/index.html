@@ -1,86 +1,36 @@
 <!DOCTYPE html>
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
-</head>
-
-<body>
-  <div class="content">
-    <div class="title">Visual Capital</div>
-    <div class="visualizations">Visualizations</div>
-    <div class="bars">
-      <div class="bars-header">
-        <div class="bars-header-item bars-title">Total Bi-Weekly Earnings</div>
-        <div class="bars-header-item bars-title-line"></div>
-        <div id="salary" class="bars-header-item bars-paycheck-total">$3,000</div>
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <script src="../dist/momoney.js" async defer></script>
+    <div class="info">
+      <div class="timeSpanHolder">20 years</div>
+      <div id="amtHolder" class="amountHolder">$300,000</div>
       
-      
-      <div id="bars-holder">
-        <svg id="bars-svg">
-          <defs>
-            <linearGradient id="redGradient" gradientTransform="rotate(0)">
-              <stop offset="0%" stop-color="#ba330b" />
-              <stop offset="100%" stop-color="#f9724a" />
-            </linearGradient>
-            <linearGradient id="blueGradient" gradientTransform="rotate(0)">
-              <stop offset="0%" stop-color="#01747d" />
-              <stop offset="100%" stop-color="#40b3bc" />
-            </linearGradient>
-            <linearGradient id="greenGradient" gradientTransform="rotate(0)">
-              <stop offset="0%" stop-color="#7f8802" />
-              <stop offset="100%" stop-color="#bcc53f" />
-            </linearGradient>
-            <linearGradient id="darkgreenGradient" gradientTransform="rotate(0)">
-              <stop offset="0%" stop-color="#506f2d" />
-              <stop offset="100%" stop-color="#8baa68" />
-            </linearGradient>
-            <linearGradient id="purpleGradient" gradientTransform="rotate(0)">
-              <stop offset="0%" stop-color="#612b76" />
-              <stop offset="100%" stop-color="#9e68b3" />
-            </linearGradient>
-            <linearGradient id="mangoGradient" gradientTransform="rotate(0)">
-              <stop offset="0%" stop-color="#b28e1a" />
-              <stop offset="100%" stop-color="#eeca56" />
-            </linearGradient>
-            <linearGradient id="darkPurpleGradient" gradientTransform="rotate(90)">
-              <stop offset="0%" stop-color="#b747d7" />
-              <stop offset="100%" stop-color="#7a0a9a" />
-            </linearGradient>
-            <linearGradient id="projectionGradient" gradientTransform="rotate(90)">
-              <stop offset="0%" stop-color="#3eb1ba" />
-              <stop offset="100%" stop-color="#02757e" />
-            </linearGradient>
-            <linearGradient id="dangerGradient" gradientTransform="rotate(90)">
-              <stop offset="0%" stop-color="#9b0b11" />
-              <stop offset="100%" stop-color="#d7474d" />
-            </linearGradient>
-            <linearGradient id="warningGradient" gradientTransform="rotate(90)">
-              <stop offset="0%" stop-color="#fbca44" />
-              <stop offset="100%" stop-color="#be8d07" />
-            </linearGradient>
-            
-            
-          </defs>
-        </svg>
-      </div>
-      </div>
-      <div id="bar-view-menu" class="bars-menu">
-        <div class="view-item">Full Paycheck</div>
-        <div class="view-item">Tax View</div>
-        <div class="view-item">Contributions View</div>
-      </div>
     </div>
-  </div>
+    <div class="controls">
+  
+      <div class="sliderContainer">
+        <input id="rothslider" class="slider" type="range" min="0" max="50" step=".1" value="0">
+        <label class="sliderLabel" id="rothsliderLabel" for="rothslider">Roth</label>
+      </div>
+      
+      <div class="buttonContainer">
+        <button class="button" id="arrButton">arrange</button>
+      </div>
 
-
-
-  <script src="./dist/main.js" async defer></script>
-</body>
-
+      <div class="sliderContainer">
+        <input id="kslider" class="slider" type="range" min="0" max="50" step=".1" value="0">
+        <label class="sliderLabel" id="ksliderLabel" for="kslider">401k</label>
+      </div>
+  
+    </div>
+  </body>
 </html>
