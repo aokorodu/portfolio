@@ -1,0 +1,12 @@
+db:
+    image: postgres:9.6-alpine
+    ports:
+        - "5432:5432"
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: brackets
+    volumes:
+        - ./initdb:/docker-entrypoint-initdb.d/

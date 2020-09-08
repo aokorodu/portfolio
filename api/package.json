@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "other:start": "node server.js",
+    "asyncTest": "node ./src/indexAsync.js",
+    "transaction": "node ./src/tx.js",
+    "test": "node ./src/index.js",
+    "fulltable": "node ./src/fullTable.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}

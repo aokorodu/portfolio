@@ -1,0 +1,238 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap");
+
+$body-font: 'Rubik', sans-serif;  
+$number-font: 'Cousine', monospace;
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;   
+}
+
+html, body {
+  font-family: $body-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111111;
+  color: #BBBBBB;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  width: 80vw;
+  max-width: 1000px;
+  min-width: 900px;
+  margin: 5vh auto;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  height: 10vh;
+  min-height: 50px;
+}
+
+
+
+.visualizations {
+  width: 100%;
+  height: 60%;
+}
+
+.bars {
+  position: relative;
+  width: 100%;
+  height:350px;
+  background-color: #222222;
+  border-radius: 16px;
+  padding: 50px;
+}
+
+.bars-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bars-header-item {
+  margin-right: 15px;
+}
+
+.bars-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #DDDDDD;
+}
+.bars-title-line{
+  border-top: 1px solid white;
+  flex-grow: 1;
+}
+
+.bars-paycheck-total{
+  font-size: 20px;
+  font-weight: 500;
+  color: #7FBFBD;
+}
+
+.bars-menu{
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bar-name {
+  fill: #D8D8D8;
+  font-variant: all-petite-caps;
+}
+
+.bar-summary-name {
+  fill: #ffffff;
+  font-variant: all-petite-caps;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.view-item {
+  margin-right: 10px;
+  display: inline;
+  font-size: 14px;
+  padding: 5px;
+  transition: background-color 200ms;
+}
+
+.view-item-selected{
+  background-color: #111111;
+  border-radius: 4px;
+  color: #7FBFBD;
+  transition: background-color 200ms;
+}
+
+#bars-holder{
+  position: relative;
+  margin-top: 30px;
+  height: 100%;
+}
+
+.bar-summary-title{
+  font-family: $number-font;
+  fill: #D8D8D8;
+  font-size: 14px;
+}
+
+.bar-summary-amount{
+  fill: #7FBFBD;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bar-number{
+  font-family: $body-font;
+  fill: #7FBFBD;
+  font-size: 14px;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.bar-number-large{
+  font-family: $number-font;
+  fill: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.dollar-amount {
+  font-family: $number-font;
+  fill: #7FBFBD;
+  font-size: 16px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.dollar-amount-special {
+  font-family: $body-font;
+  fill: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+
+.bar-summary-footer{
+  font-family: $number-font;
+  fill: #7FBFBD;
+  font-size: 22px;
+  font-weight: 700;
+  font-variant: all-petite-caps;
+}
+
+.bar-summary-footer-number{
+  font-family: $number-font;
+  fill: #7FBFBD;
+  font-size: 22px;
+  font-weight: 700;
+  font-variant: all-petite-caps;
+}
+
+.bar-projection-amount {
+  font-family: $number-font;
+  fill: #FFEDDD;
+  font-weight: 700;
+}
+
+.bar {
+  transition: opacity 300ms;
+}
+
+.warning-header {
+  font-family: $body-font;
+  font-size: 16px;
+  fill: #ff5652;
+  font-variant: all-petite-caps;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.warning-text {
+  font-family: $body-font;
+  font-size: 12px;
+  fill: #d8d8d8;
+  pointer-events: none;
+}
+
+.warning-link {
+  font-family: $body-font;
+  font-size: 12px;
+  fill: #7FBFBD;
+  pointer-events: none;
+}
+
+.showing {
+  opacity: 1;
+  transition: opacity 333ms;
+  pointer-events: none;
+}
+
+.hiding {
+  opacity: 0;
+  transition: opacity 333ms;
+  pointer-events: none;
+}
